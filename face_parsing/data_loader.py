@@ -3,7 +3,8 @@ import torchvision.datasets as dsets
 from torchvision import transforms
 from PIL import Image
 import os
-
+img_path = 'CelebAMask-HQ/CelebAMask-HQ/CelebA-HQ-img'
+label_path = 'CelebAMask-HQ/CelebAMask-HQ/CelebAMask-HQ-mask-anno'
 class CelebAMaskHQ():
     def __init__(self, img_path, label_path, transform_img, transform_label, mode):
         self.img_path = img_path
